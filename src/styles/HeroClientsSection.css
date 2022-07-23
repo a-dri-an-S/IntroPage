@@ -1,0 +1,12 @@
+.hero-clients {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-client-img {
+    width: 62px;
+    height: auto;
+    
+}

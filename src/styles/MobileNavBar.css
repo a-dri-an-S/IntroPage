@@ -1,0 +1,26 @@
+.mobile-navbar {
+    width: 375px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-navbar-static {
+    width: 375px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.snap-logo {
+    margin: 0px 0px 0px 20px;
+    width: 72px;
+    height: auto;
+}
+.mobile-nav-btn {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    width: 54px;
+}
