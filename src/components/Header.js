@@ -1,10 +1,13 @@
 import MobileNavBar from "./MobileNavBar";
 import "../styles/Header.css";
 
-const Header = () => {
+const Header = ({ mobileNavOn, mobileNavToggle }) => {
     return (
         <header className="Header">
-            <MobileNavBar />
+            <MobileNavBar 
+                mobileNavOn={mobileNavOn}
+                mobileNavToggle={mobileNavToggle}
+            />
         </header>
     );
 }
