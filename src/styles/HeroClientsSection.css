@@ -1,12 +1,28 @@
-.hero-clients {
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-client-img {
-    width: 62px;
-    height: auto;
+@media only screen and (max-width: 1199px){
+    .hero-clients {
+        width: 360px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
+    .hero-client-img {
+        width: 62px;
+        height: auto;
+        
+    }
+}
+@media only screen and (min-width: 1200px){
+    .hero-clients {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .hero-client-img {
+        width: 82px;
+        height: auto;
+        
+    }
 }

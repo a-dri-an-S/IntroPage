@@ -6,7 +6,6 @@
 }
 .company-menu-title {
     margin: 0px;
-    font-size: 18px;
     font-weight: 500;
     color: var(--medium-gray);
     cursor: pointer;
@@ -24,13 +23,45 @@
 .company-menu-dropdown {
     display: flex;
     flex-direction: column;
-    margin: 0px 0px 0px 20px;
+    
 }
 .company-menu-link {
-    margin: 20px 0px 0px 0px;
     text-decoration: none;
     color: var(--medium-gray)
 }
 .company-menu-link:hover {
     color: var(--almost-black);
+}
+
+@media only screen and (max-width: 1199px) {
+    .company-menu-title {
+        font-size: 18px;
+    }
+    .company-menu-dropdown {
+        margin: 0px 0px 0px 20px;
+    }
+    .company-menu-link {
+        margin: 20px 0px 0px 0px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .company-menu-title {
+        font-size: 16px;
+    }
+    .company-menu-dropdown {
+        margin-top: 20px;
+        width: 130px;
+        height: 150px;
+        position: absolute;
+        left: 330px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border-radius: 14px;
+        background-color: var(--almost-white);
+        box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.133);
+    }
+    .company-menu-link {
+        margin: 0px 0px 0px 24px;
+        font-size: 16px;
+    }
 }

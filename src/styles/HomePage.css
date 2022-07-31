@@ -1,5 +1,19 @@
 .home-page {
     position: relative;
-    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     height: 100vh;
+}
+
+@media only screen and (max-width: 1199px){
+    .home-page {
+        width: 375px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .home-page {
+        width: 1400px;
+    }
 }

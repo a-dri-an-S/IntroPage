@@ -1,7 +1,8 @@
 import NavBarLinks from "./NavBarLinks";
 import NavBarButtons from "./NavBarButtons";
 import SnapLogo from "../assets/logo.svg";
-import { Twirl as Hamburger } from "hamburger-react";
+import MenuImg from "../assets/icon-menu.svg";
+import MenuCloseImg from "../assets/icon-close-menu.svg";
 import "../styles/MobileNavBar.css";
 
 const MobileNavBar = ({ mobileNavOn, mobileNavToggle }) => {
@@ -14,7 +15,12 @@ const MobileNavBar = ({ mobileNavOn, mobileNavToggle }) => {
                     className={`mobile-nav-btn ${mobileNavOn ? 'btn-active' : null}`}
                     onClick={mobileNavToggle}
                 >
-                    <Hamburger size={30}/>
+                    {
+                        mobileNavOn ? 
+                        <img src={MenuCloseImg} alt="menu-close" />
+                            :
+                        <img src={MenuImg} alt="menu-hamburger" />
+                    }
                 </button>
             </div>
             {

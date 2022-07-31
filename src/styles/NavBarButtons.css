@@ -1,12 +1,7 @@
 .navbar-btns {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 .navbar-btn-login {
-    margin: 30px 0px 20px 0px;
     border: none;
     background-color: inherit;
     font-family: inherit;
@@ -17,12 +12,7 @@
 .navbar-btn-login:hover {
     color: var(--almost-black)
 }
-.navbar-btn-register:hover {
-    color: var(--almost-black)
-}
-.navbar-btn-register {
-    width: 200px;
-    height: 46px;
+.navbar-btn-register { 
     border: 2px solid var(--medium-gray);
     border-radius: 14px;
     background-color: inherit;
@@ -35,4 +25,38 @@
     color: var(--almost-white);
     border-color: var(--almost-black);
     background-color: var(--almost-black);
+}
+
+@media only screen and (max-width: 1999px) {
+    .navbar-btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+    .navbar-btn-login {
+        margin: 30px 0px 20px 0px;
+        font-size: inherit;
+    }
+    .navbar-btn-register {
+        width: 200px;
+        height: 46px;
+        font-size: inherit;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .navbar-btns {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navbar-btn-login {
+        margin: 0px 20px 0px 0px;
+        font-size: 16px;
+    }
+    .navbar-btn-register {
+        width: 120px;
+        height: 46px;
+        font-size: 16px;
+    }
 }

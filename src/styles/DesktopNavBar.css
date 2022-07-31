@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1199px) {
+    .desktop-navbar {
+        visibility: hidden;
+        margin: 0px;
+        width: 0px;
+        height: 0px;
+    }
+    .desktop-snap-logo {
+        margin-right: 0px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .desktop-navbar {
+        visibility: visible;
+        margin: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .desktop-navbar-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .desktop-snap-logo {
+        margin-right: 32px;
+    }
+}
